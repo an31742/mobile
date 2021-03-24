@@ -1,8 +1,8 @@
-import Vue from 'vue'
-import App from './App.vue'
+import Vue from 'vue' // y引入vue
+import App from './App.vue' // 引入app
 import router from './permission' // 经过权限处理的router
-import store from './store'
-import Vant, { Lazyload } from 'vant' // 引入 vant组件库  引入lazyload对象 (懒加载)
+import store from './store' // 使用vuestore使用vuex
+import Vant, { Lazyload } from 'vant' // 引入 vant组件库  引入lazyload对象 (懒加载)  使用懒加载
 import plugin from '@/utils/plugin'
 import 'vant/lib/index.less' // vant 样式文件 换成less
 import '@/styles/index.less' // 引入全局的自定义样式  因为要覆盖vant的样式

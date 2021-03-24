@@ -1,5 +1,5 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
+import Vue from 'vue' // 引入vue
+import VueRouter from 'vue-router' // 引入vuerouter
 const Layout = () => import('@/views/layout') // 布局组件
 const Home = () => import('@/views/home') // 主页组件
 const Question = () => import('@/views/question') // 问答组件
@@ -15,6 +15,7 @@ const SearchResult = () => import('@/views/search/result') // 搜索结果
 Vue.use(VueRouter)
 // 可以在路由表里指定 哪个组件需要缓存
 const routes = [
+  // 这是布局组件
   {
     path: '/',
     name: 'home',
@@ -24,7 +25,7 @@ const routes = [
       component: Home, // 二级路由 首页
       // meta属性在存在二级路由并且path相同的情况下 需要写到 二级路由下
       meta: {
-        isAlive: true // 是否缓存组件实例
+        isAlive: true // 是否缓存组件实例  首页缓存组件
       }
     },
     {
@@ -40,14 +41,17 @@ const routes = [
     }]
   },
   {
+    // 点击编辑资料
     path: '/user/profile',
     component: Profile // 编辑资料
   },
   {
+    // 点击进入小智同学
     path: '/user/chat',
     component: Chat // 小智同学
   },
   {
+    // 除了一开始的布局组件都是自己的组件
     path: '/login',
     component: Login // 登录组件
   },

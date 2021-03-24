@@ -9,6 +9,7 @@
          -->
          <!-- 如果为true  就包在里面 -->
          <!-- 可以保证只有 layout组件进行缓存 -->
+         <!-- 使用keepalive进行组件缓存 -->
       <router-view v-if="$route.meta.isAlive"  />
     </keep-alive>
     <!-- 如果为false就放在外面 -->
