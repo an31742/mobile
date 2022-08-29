@@ -40,7 +40,7 @@ import { disLikeArticle, reportArticle } from '@/api/article'
 import eventBus from '@/utils/eventBus'
 import ChannelEdit from './components/channel-edit'
 export default {
-  name: 'home', // devtools查看组件时  可以看到 对应的name名称
+  name: 'home', // devtools查看组件时  可以看到 对应的name名称111
   data () {
     return {
       activeIndex: 0, // 默认启动第0 个标签
